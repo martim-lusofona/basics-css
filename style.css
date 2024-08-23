@@ -1,3 +1,11 @@
+div{
+    margin: 5px;
+}
+
+.content{
+    border: 2px solid blueviolet;
+}
+
 .element{
     background-color: aqua;
     border: 1px solid black;
