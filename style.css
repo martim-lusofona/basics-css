@@ -1,0 +1,43 @@
+.element{
+    background-color: aqua;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.center{
+    justify-content: center;
+}
+
+.end{
+    width: 300px;
+    align-items: flex-end;
+}
+
+.reversed{
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.grid{
+    display: grid;
+    grid-template-areas: "auto auto auto";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100px;
+}
+
+/* not correct to do, we should use media queries to change behaviour, just for demo purposes */
+.grid-mobile{
+    display: grid;
+    grid-template-areas: "auto"
+                        "auto"
+                        "auto";
+    grid-template-rows: 50px 200px 50px;
+}
