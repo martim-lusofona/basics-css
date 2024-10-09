@@ -1,42 +1,47 @@
-div{
+div {
     margin: 5px;
 }
 
-.content{
+.content {
     border: 2px solid blueviolet;
 }
 
-.element{
+.element {
     background-color: aqua;
     border: 1px solid black;
     margin: 10px;
-    border-radius:10px;
+    border-radius: 10px;
     padding: 10px;
+    height: 20px;
 }
 
 .container {
     display: flex;
 }
 
-.column{
+.column {
     flex-direction: column;
 }
 
-.center{
+.center {
     justify-content: center;
 }
 
-.end{
+.align-center {
+    align-items: center;
+}
+
+.end {
     width: 300px;
     align-items: flex-end;
 }
 
-.reversed{
+.reversed {
     flex-direction: row-reverse;
     justify-content: flex-end;
 }
 
-.grid{
+.grid {
     display: grid;
     grid-template-areas: "auto auto auto";
     grid-template-columns: 1fr 2fr 1fr;
@@ -44,11 +49,11 @@ div{
 }
 
 /* not correct to do, we should use media queries to change behaviour, just for demo purposes */
-.grid-mobile{
+.grid-mobile {
     display: grid;
     grid-template-areas: "auto"
-                        "auto"
-                        "auto";
+        "auto"
+        "auto";
     grid-template-rows: 50px 200px 50px;
 }
 
@@ -58,6 +63,7 @@ div{
     border: 1px solid black;
     color: white;
 }
+
 .main {
     grid-area: main;
     display: flex;
@@ -67,17 +73,18 @@ div{
     align-items: center;
     justify-content: center;
 }
+
 .footer {
     grid-area: footer;
     background-color: #7A9F35;
     border: 1px solid black;
 }
 
-.grid-areas{
+.grid-areas {
     display: grid;
     grid-template-rows: 30px 200px 30px;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: "header header header"
-                            ". main ."
-                            "footer footer footer";
+        ". main ."
+        "footer footer footer";
 }
